@@ -4,10 +4,10 @@ import users from '../assets/users'
 import data from '../assets/data'
 import friends from '../assets/friends_list'
 import transactions from '../assets/transactions_list'
-import User from './User'
-import Statistics from "./Statistics";
-import Friends from "./Friends"
-import Transactions from "./Transactions"
+import User from './User/User'
+import Statistics from "./Statistics/Statistics";
+import Friends from "./Friends/Friends"
+import Transactions from "./Transactions/Transactions"
 
 
 
