@@ -1,4 +1,5 @@
 import css from './tranactions.module.css'
+import PropTypes from "prop-types"
 
 export default function Transactions({ items }) {
     return (
@@ -22,4 +23,13 @@ export default function Transactions({ items }) {
         </tbody>
 </table>
         );
+}
+
+Transactions.propTypes = {
+    items: PropTypes.arrayOf(PropTypes.shape({
+            id: PropTypes.string,
+            type: PropTypes.string,
+            amount: PropTypes.string,
+            currency: PropTypes.string,
+        })),
 }

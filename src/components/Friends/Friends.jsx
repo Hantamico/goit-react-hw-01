@@ -1,4 +1,4 @@
-import PropTypes from "prop-types"
+import PropTypes, { bool, number, string } from "prop-types"
 import css from "./Friends.module.css"
 
 export default function Friends({friends}) {
@@ -16,5 +16,10 @@ export default function Friends({friends}) {
 };
 
 Friends.propTypes = {
-    friend: PropTypes.arrayOf(PropTypes.object),
+    friend: PropTypes.arrayOf(PropTypes.shape({
+        id: PropTypes.number,
+        avatar: PropTypes.string,
+        name: PropTypes.string,
+        isOnline: PropTypes.bool,
+    })),
 }
